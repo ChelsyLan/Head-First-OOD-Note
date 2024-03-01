@@ -7,6 +7,11 @@ public class MiniDuckSimulator {
         littleDuck.performFly();
         littleDuck.performQuack();
         littleDuck.swim();
+        System.out.println("---------");
+        ModelDuck modelDuck = new ModelDuck();
+        modelDuck.performFly();
+        modelDuck.setFlyBehavior(new FlyRocket());
+        modelDuck.performFly();
 
 
     }
